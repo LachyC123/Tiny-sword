@@ -66,8 +66,12 @@ At the right timings this reads better than a mediocre 4-frame death sheet.
 ```bash
 pip install Pillow
 python3 tools/build_manifest.py   # -> assets/manifest.json
-python3 tools/test_detect.py      # regression test for frame detection
+python3 tools/test_detect.py      # regression tests (exit 1 on failure)
 ```
+
+`build_manifest.py` reports any animated clip that falls through to default
+playback, so a mis-keyed lookup is visible rather than silent. A clean run ends
+with `no warnings`.
 
 `assets/` is the pack, normalised to web-safe kebab-case paths with the macOS
 junk stripped. `build_manifest.py` derives **frame size, frame count and
@@ -116,6 +120,21 @@ side-on standard; if you add the Lancer, use only its `right` / `upright` /
 
 **The Pawn has no attack** — its `interact-*` sheets are work animations. It's
 a worker, not a fighter.
+
+## A trap worth not repeating
+
+Playback metadata is authored, not derived — `attack1` must be `loop: false`
+while `idle` is `loop: true`. The lookup was briefly keyed on the file stem
+(`warrior-attack1`) instead of the clip name (`attack1`), so every unit clip
+silently fell through to a looping default. Non-looping attacks became looping,
+`Animator.finished` never fired, and units never left `STATE.ATTACK` — which
+also pins velocity to zero. Everyone froze mid-swing, forever.
+
+Screenshots cannot catch this: a unit stuck mid-swing is pixel-identical to one
+swinging. `tools/test_detect.py` therefore asserts on the *manifest* (one-shot
+clips must not loop, anchors must exist, paths must stay relative), and the
+useful check when touching the state machine is behavioural — drive the game
+headless and assert that the player returns to idle and a wave completes.
 
 ## Layout
 

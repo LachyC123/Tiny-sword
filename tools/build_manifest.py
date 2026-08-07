@@ -35,6 +35,18 @@ UNIT_FPS = {
     "idle": (8, True), "run": (12, True), "guard": (10, True),
     "attack1": (14, False), "attack2": (14, False), "shoot": (14, False),
     "heal": (12, False), "heal-effect": (12, False),
+    # Pawn carry/work variants.
+    "idle-axe": (8, True), "idle-gold": (8, True), "idle-hammer": (8, True),
+    "idle-knife": (8, True), "idle-meat": (8, True), "idle-pickaxe": (8, True),
+    "idle-wood": (8, True),
+    "run-axe": (12, True), "run-gold": (12, True), "run-hammer": (12, True),
+    "run-knife": (12, True), "run-meat": (12, True), "run-pickaxe": (12, True),
+    "run-wood": (12, True),
+    "interact-axe": (12, True), "interact-hammer": (12, True),
+    "interact-knife": (12, True), "interact-pickaxe": (12, True),
+    # Directional lancer sheets.
+    **{f"{d}-attack": (14, False) for d in ("up", "upright", "right", "downright", "down")},
+    **{f"{d}-defence": (10, True) for d in ("up", "upright", "right", "downright", "down")},
 }
 FX_FPS = {
     "dust-01": (16, False), "dust-02": (16, False),
@@ -48,10 +60,14 @@ PROP_FPS = {
     "water-rocks-01": (10, True), "water-rocks-02": (10, True),
     "water-rocks-03": (10, True), "water-rocks-04": (10, True),
     "rubber-duck": (6, True),
+    **{f"gold-stone-{i}-highlight": (8, True) for i in range(1, 7)},
 }
 DEFAULT = (12, True)
 
 warnings: list[str] = []
+# Clips that fell through to DEFAULT playback. Reported at the end so a
+# mis-keyed lookup is visible instead of silently shipping wrong fps/loop.
+unknown_clips: set[str] = set()
 
 
 def rel(p: Path) -> str:
@@ -136,11 +152,21 @@ def content_bbox(img: Image.Image, cw: int, ch: int, frame: int = 0):
             "w": bb[2] - bb[0], "h": bb[3] - bb[1]}
 
 
-def describe(path: Path, fps_table: dict, *, anchor: str | None = None) -> dict:
+def describe(path: Path, fps_table: dict, *, anchor: str | None = None,
+             key: str | None = None) -> dict:
+    """
+    `key` is the name to look up in `fps_table`, which is NOT always the file
+    stem: unit sheets are prefixed ("warrior-attack1.png") while the table is
+    keyed on the bare clip name ("attack1"). Deriving the key from the stem here
+    silently dropped every unit clip to the default — which made attacks loop,
+    so units never left their attack state and froze mid-swing.
+    """
     img = Image.open(path).convert("RGBA")
     w, h = img.size
     cw, frames = detect_frames(img)
-    name = path.stem
+    name = key if key is not None else path.stem
+    if frames > 1 and fps_table and name not in fps_table:
+        unknown_clips.add(f"{path.name} -> '{name}'")
     fps, loop = fps_table.get(name, DEFAULT)
     bb = content_bbox(img, cw, h)
     out = {
@@ -180,8 +206,9 @@ for unit_dir in sorted((UNIT_DIR / "blue").iterdir()):
         name = png.stem
         if name.startswith(unit + "-"):
             name = name[len(unit) + 1:]
-        d = describe(png, UNIT_FPS)
+        d = describe(png, UNIT_FPS, key=name)
         if name == "arrow":
+            unknown_clips.discard(f"{png.name} -> 'arrow'")
             d["anchor"] = {"x": d["cellW"] / 2, "y": d["cellH"] / 2}
             projectile = d
             continue
@@ -228,7 +255,7 @@ terrain = {
     "slopes": {"left": {"col": 0, "row": 4}, "right": {"col": 3, "row": 4}},
     "water": rel(tileset / "water-background-color.png"),
     "foam": describe(tileset / "water-foam.png", {"water-foam": (8, True)}, anchor="centre"),
-    "shadow": describe(tileset / "shadow.png", {}, anchor="content-centre"),
+    "shadow": describe(tileset / "shadow.png", {}, anchor="content-centre", key="#shadow"),
 }
 
 # ------------------------------------------------------------------ props ---
@@ -277,6 +304,9 @@ print("props:")
 for k, v in props.items():
     print(f"  {k:<22} {v['cellW']:>4}x{v['cellH']:<4} x{v['frames']:<3} "
           f"anchor ({v['anchor']['x']:.0f},{v['anchor']['y']:.0f})")
+if unknown_clips:
+    warnings.extend(f"no playback rule, used default {DEFAULT}: {c}"
+                    for c in sorted(unknown_clips))
 if warnings:
     print("\nWARNINGS:")
     for w in warnings:
