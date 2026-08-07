@@ -1,0 +1,2169 @@
+{
+  "generated": "tools/build_manifest.py",
+  "palettes": [
+    "black",
+    "blue",
+    "purple",
+    "red",
+    "yellow"
+  ],
+  "units": {
+    "archer": {
+      "cell": 192,
+      "anchor": {
+        "x": 93.0,
+        "y": 136
+      },
+      "anims": {
+        "idle": {
+          "file": "/assets/units/blue/archer/archer-idle.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 58,
+            "top": 48,
+            "right": 128,
+            "bottom": 136,
+            "w": 70,
+            "h": 88
+          },
+          "anchor": {
+            "x": 93.0,
+            "y": 136
+          }
+        },
+        "run": {
+          "file": "/assets/units/blue/archer/archer-run.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 4,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 57,
+            "top": 51,
+            "right": 127,
+            "bottom": 136,
+            "w": 70,
+            "h": 85
+          },
+          "anchor": {
+            "x": 93.0,
+            "y": 136
+          }
+        },
+        "shoot": {
+          "file": "/assets/units/blue/archer/archer-shoot.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 56,
+            "top": 46,
+            "right": 128,
+            "bottom": 136,
+            "w": 72,
+            "h": 90
+          },
+          "anchor": {
+            "x": 93.0,
+            "y": 136
+          }
+        }
+      },
+      "projectile": {
+        "file": "/assets/units/blue/archer/arrow.png",
+        "cellW": 64,
+        "cellH": 64,
+        "frames": 1,
+        "fps": 12,
+        "loop": true,
+        "bbox": {
+          "left": 10,
+          "top": 26,
+          "right": 53,
+          "bottom": 38,
+          "w": 43,
+          "h": 12
+        },
+        "anchor": {
+          "x": 32.0,
+          "y": 32.0
+        }
+      }
+    },
+    "lancer": {
+      "cell": 320,
+      "anchor": {
+        "x": 149.5,
+        "y": 198
+      },
+      "anims": {
+        "down-attack": {
+          "file": "/assets/units/blue/lancer/lancer-down-attack.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 3,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 143,
+            "top": 151,
+            "right": 187,
+            "bottom": 302,
+            "w": 44,
+            "h": 151
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "down-defence": {
+          "file": "/assets/units/blue/lancer/lancer-down-defence.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 143,
+            "top": 138,
+            "right": 188,
+            "bottom": 277,
+            "w": 45,
+            "h": 139
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "downright-attack": {
+          "file": "/assets/units/blue/lancer/lancer-downright-attack.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 3,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 144,
+            "top": 139,
+            "right": 243,
+            "bottom": 274,
+            "w": 99,
+            "h": 135
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "downright-defence": {
+          "file": "/assets/units/blue/lancer/lancer-downright-defence.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 126,
+            "top": 132,
+            "right": 229,
+            "bottom": 255,
+            "w": 103,
+            "h": 123
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "idle": {
+          "file": "/assets/units/blue/lancer/lancer-idle.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 12,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 115,
+            "top": 48,
+            "right": 184,
+            "bottom": 198,
+            "w": 69,
+            "h": 150
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "right-attack": {
+          "file": "/assets/units/blue/lancer/lancer-right-attack.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 3,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 144,
+            "top": 125,
+            "right": 307,
+            "bottom": 198,
+            "w": 163,
+            "h": 73
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "right-defence": {
+          "file": "/assets/units/blue/lancer/lancer-right-defence.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 123,
+            "top": 123,
+            "right": 275,
+            "bottom": 198,
+            "w": 152,
+            "h": 75
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "run": {
+          "file": "/assets/units/blue/lancer/lancer-run.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 115,
+            "top": 54,
+            "right": 181,
+            "bottom": 198,
+            "w": 66,
+            "h": 144
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "up-attack": {
+          "file": "/assets/units/blue/lancer/lancer-up-attack.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 3,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 126,
+            "top": 46,
+            "right": 174,
+            "bottom": 189,
+            "w": 48,
+            "h": 143
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "up-defence": {
+          "file": "/assets/units/blue/lancer/lancer-up-defence.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 123,
+            "top": 72,
+            "right": 174,
+            "bottom": 195,
+            "w": 51,
+            "h": 123
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "upright-attack": {
+          "file": "/assets/units/blue/lancer/lancer-upright-attack.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 3,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 134,
+            "top": 88,
+            "right": 260,
+            "bottom": 194,
+            "w": 126,
+            "h": 106
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        },
+        "upright-defence": {
+          "file": "/assets/units/blue/lancer/lancer-upright-defence.png",
+          "cellW": 320,
+          "cellH": 320,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 133,
+            "top": 105,
+            "right": 243,
+            "bottom": 195,
+            "w": 110,
+            "h": 90
+          },
+          "anchor": {
+            "x": 149.5,
+            "y": 198
+          }
+        }
+      }
+    },
+    "monk": {
+      "cell": 192,
+      "anchor": {
+        "x": 96.0,
+        "y": 134
+      },
+      "anims": {
+        "heal-effect": {
+          "file": "/assets/units/blue/monk/heal-effect.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 11,
+          "fps": 12,
+          "loop": false,
+          "bbox": {
+            "left": 47,
+            "top": 50,
+            "right": 135,
+            "bottom": 132,
+            "w": 88,
+            "h": 82
+          },
+          "anchor": {
+            "x": 96.0,
+            "y": 134
+          }
+        },
+        "heal": {
+          "file": "/assets/units/blue/monk/heal.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 11,
+          "fps": 12,
+          "loop": false,
+          "bbox": {
+            "left": 67,
+            "top": 66,
+            "right": 125,
+            "bottom": 134,
+            "w": 58,
+            "h": 68
+          },
+          "anchor": {
+            "x": 96.0,
+            "y": 134
+          }
+        },
+        "idle": {
+          "file": "/assets/units/blue/monk/idle.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 8,
+          "loop": true,
+          "bbox": {
+            "left": 67,
+            "top": 65,
+            "right": 125,
+            "bottom": 134,
+            "w": 58,
+            "h": 69
+          },
+          "anchor": {
+            "x": 96.0,
+            "y": 134
+          }
+        },
+        "run": {
+          "file": "/assets/units/blue/monk/run.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 4,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 56,
+            "top": 65,
+            "right": 137,
+            "bottom": 134,
+            "w": 81,
+            "h": 69
+          },
+          "anchor": {
+            "x": 96.0,
+            "y": 134
+          }
+        }
+      }
+    },
+    "pawn": {
+      "cell": 192,
+      "anchor": {
+        "x": 95.0,
+        "y": 135
+      },
+      "anims": {
+        "idle-axe": {
+          "file": "/assets/units/blue/pawn/pawn-idle-axe.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 56,
+            "top": 64,
+            "right": 121,
+            "bottom": 135,
+            "w": 65,
+            "h": 71
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "idle-gold": {
+          "file": "/assets/units/blue/pawn/pawn-idle-gold.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 69,
+            "top": 64,
+            "right": 130,
+            "bottom": 135,
+            "w": 61,
+            "h": 71
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "idle-hammer": {
+          "file": "/assets/units/blue/pawn/pawn-idle-hammer.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 69,
+            "top": 64,
+            "right": 138,
+            "bottom": 135,
+            "w": 69,
+            "h": 71
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "idle-knife": {
+          "file": "/assets/units/blue/pawn/pawn-idle-knife.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 69,
+            "top": 64,
+            "right": 131,
+            "bottom": 135,
+            "w": 62,
+            "h": 71
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "idle-meat": {
+          "file": "/assets/units/blue/pawn/pawn-idle-meat.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 69,
+            "top": 62,
+            "right": 125,
+            "bottom": 135,
+            "w": 56,
+            "h": 73
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "idle-pickaxe": {
+          "file": "/assets/units/blue/pawn/pawn-idle-pickaxe.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 60,
+            "top": 64,
+            "right": 121,
+            "bottom": 135,
+            "w": 61,
+            "h": 71
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "idle-wood": {
+          "file": "/assets/units/blue/pawn/pawn-idle-wood.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 69,
+            "top": 64,
+            "right": 129,
+            "bottom": 135,
+            "w": 60,
+            "h": 71
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "idle": {
+          "file": "/assets/units/blue/pawn/pawn-idle.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 69,
+            "top": 64,
+            "right": 121,
+            "bottom": 135,
+            "w": 52,
+            "h": 71
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "interact-axe": {
+          "file": "/assets/units/blue/pawn/pawn-interact-axe.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 56,
+            "top": 61,
+            "right": 118,
+            "bottom": 135,
+            "w": 62,
+            "h": 74
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "interact-hammer": {
+          "file": "/assets/units/blue/pawn/pawn-interact-hammer.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 3,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 71,
+            "top": 65,
+            "right": 140,
+            "bottom": 135,
+            "w": 69,
+            "h": 70
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "interact-knife": {
+          "file": "/assets/units/blue/pawn/pawn-interact-knife.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 4,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 67,
+            "top": 60,
+            "right": 136,
+            "bottom": 135,
+            "w": 69,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "interact-pickaxe": {
+          "file": "/assets/units/blue/pawn/pawn-interact-pickaxe.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 60,
+            "top": 61,
+            "right": 118,
+            "bottom": 135,
+            "w": 58,
+            "h": 74
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run-axe": {
+          "file": "/assets/units/blue/pawn/pawn-run-axe.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 57,
+            "top": 60,
+            "right": 129,
+            "bottom": 135,
+            "w": 72,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run-gold": {
+          "file": "/assets/units/blue/pawn/pawn-run-gold.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 73,
+            "top": 60,
+            "right": 129,
+            "bottom": 135,
+            "w": 56,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run-hammer": {
+          "file": "/assets/units/blue/pawn/pawn-run-hammer.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 73,
+            "top": 60,
+            "right": 141,
+            "bottom": 135,
+            "w": 68,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run-knife": {
+          "file": "/assets/units/blue/pawn/pawn-run-knife.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 73,
+            "top": 60,
+            "right": 137,
+            "bottom": 135,
+            "w": 64,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run-meat": {
+          "file": "/assets/units/blue/pawn/pawn-run-meat.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 73,
+            "top": 55,
+            "right": 133,
+            "bottom": 135,
+            "w": 60,
+            "h": 80
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run-pickaxe": {
+          "file": "/assets/units/blue/pawn/pawn-run-pickaxe.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 59,
+            "top": 60,
+            "right": 129,
+            "bottom": 135,
+            "w": 70,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run-wood": {
+          "file": "/assets/units/blue/pawn/pawn-run-wood.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 73,
+            "top": 60,
+            "right": 129,
+            "bottom": 135,
+            "w": 56,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        },
+        "run": {
+          "file": "/assets/units/blue/pawn/pawn-run.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 73,
+            "top": 60,
+            "right": 129,
+            "bottom": 135,
+            "w": 56,
+            "h": 75
+          },
+          "anchor": {
+            "x": 95.0,
+            "y": 135
+          }
+        }
+      }
+    },
+    "warrior": {
+      "cell": 192,
+      "anchor": {
+        "x": 101.5,
+        "y": 137
+      },
+      "anims": {
+        "attack1": {
+          "file": "/assets/units/blue/warrior/warrior-attack1.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 4,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 57,
+            "top": 47,
+            "right": 122,
+            "bottom": 137,
+            "w": 65,
+            "h": 90
+          },
+          "anchor": {
+            "x": 101.5,
+            "y": 137
+          }
+        },
+        "attack2": {
+          "file": "/assets/units/blue/warrior/warrior-attack2.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 4,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 41,
+            "top": 51,
+            "right": 122,
+            "bottom": 137,
+            "w": 81,
+            "h": 86
+          },
+          "anchor": {
+            "x": 101.5,
+            "y": 137
+          }
+        },
+        "guard": {
+          "file": "/assets/units/blue/warrior/warrior-guard.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 57,
+            "top": 44,
+            "right": 125,
+            "bottom": 137,
+            "w": 68,
+            "h": 93
+          },
+          "anchor": {
+            "x": 101.5,
+            "y": 137
+          }
+        },
+        "idle": {
+          "file": "/assets/units/blue/warrior/warrior-idle.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 8,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 62,
+            "top": 48,
+            "right": 141,
+            "bottom": 137,
+            "w": 79,
+            "h": 89
+          },
+          "anchor": {
+            "x": 101.5,
+            "y": 137
+          }
+        },
+        "run": {
+          "file": "/assets/units/blue/warrior/warrior-run.png",
+          "cellW": 192,
+          "cellH": 192,
+          "frames": 6,
+          "fps": 12,
+          "loop": true,
+          "bbox": {
+            "left": 62,
+            "top": 53,
+            "right": 138,
+            "bottom": 137,
+            "w": 76,
+            "h": 84
+          },
+          "anchor": {
+            "x": 101.5,
+            "y": 137
+          }
+        }
+      }
+    }
+  },
+  "fx": {
+    "dust-01": {
+      "file": "/assets/fx/dust-01.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 8,
+      "fps": 16,
+      "loop": false,
+      "bbox": {
+        "left": 15,
+        "top": 17,
+        "right": 47,
+        "bottom": 46,
+        "w": 32,
+        "h": 29
+      },
+      "anchor": {
+        "x": 32.0,
+        "y": 32.0
+      }
+    },
+    "dust-02": {
+      "file": "/assets/fx/dust-02.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 10,
+      "fps": 16,
+      "loop": false,
+      "bbox": {
+        "left": 1,
+        "top": 8,
+        "right": 64,
+        "bottom": 61,
+        "w": 63,
+        "h": 53
+      },
+      "anchor": {
+        "x": 32.0,
+        "y": 32.0
+      }
+    },
+    "explosion-01": {
+      "file": "/assets/fx/explosion-01.png",
+      "cellW": 192,
+      "cellH": 192,
+      "frames": 8,
+      "fps": 16,
+      "loop": false,
+      "bbox": {
+        "left": 89,
+        "top": 90,
+        "right": 104,
+        "bottom": 105,
+        "w": 15,
+        "h": 15
+      },
+      "anchor": {
+        "x": 96.0,
+        "y": 96.0
+      }
+    },
+    "explosion-02": {
+      "file": "/assets/fx/explosion-02.png",
+      "cellW": 192,
+      "cellH": 192,
+      "frames": 10,
+      "fps": 16,
+      "loop": false,
+      "bbox": {
+        "left": 78,
+        "top": 81,
+        "right": 113,
+        "bottom": 113,
+        "w": 35,
+        "h": 32
+      },
+      "anchor": {
+        "x": 96.0,
+        "y": 96.0
+      }
+    },
+    "fire-01": {
+      "file": "/assets/fx/fire-01.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 8,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 27,
+        "top": 58,
+        "right": 38,
+        "bottom": 64,
+        "w": 11,
+        "h": 6
+      },
+      "anchor": {
+        "x": 32.0,
+        "y": 32.0
+      }
+    },
+    "fire-02": {
+      "file": "/assets/fx/fire-02.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 10,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 26,
+        "top": 59,
+        "right": 38,
+        "bottom": 64,
+        "w": 12,
+        "h": 5
+      },
+      "anchor": {
+        "x": 32.0,
+        "y": 32.0
+      }
+    },
+    "fire-03": {
+      "file": "/assets/fx/fire-03.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 12,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 26,
+        "top": 57,
+        "right": 38,
+        "bottom": 64,
+        "w": 12,
+        "h": 7
+      },
+      "anchor": {
+        "x": 32.0,
+        "y": 32.0
+      }
+    },
+    "water-splash": {
+      "file": "/assets/fx/water-splash.png",
+      "cellW": 192,
+      "cellH": 192,
+      "frames": 9,
+      "fps": 14,
+      "loop": false,
+      "bbox": {
+        "left": 83,
+        "top": 84,
+        "right": 108,
+        "bottom": 108,
+        "w": 25,
+        "h": 24
+      },
+      "anchor": {
+        "x": 96.0,
+        "y": 96.0
+      }
+    }
+  },
+  "terrain": {
+    "tile": 64,
+    "tilemaps": [
+      "/assets/terrain/tileset/tilemap-color1.png",
+      "/assets/terrain/tileset/tilemap-color2.png",
+      "/assets/terrain/tileset/tilemap-color3.png",
+      "/assets/terrain/tileset/tilemap-color4.png",
+      "/assets/terrain/tileset/tilemap-color5.png"
+    ],
+    "cols": 9,
+    "rows": 6,
+    "blocks": {
+      "grass": {
+        "col": 0,
+        "row": 0,
+        "w": 4,
+        "h": 4
+      },
+      "plateau": {
+        "col": 5,
+        "row": 0,
+        "w": 4,
+        "h": 4
+      },
+      "cliffFace": {
+        "col": 5,
+        "row": 4,
+        "w": 4,
+        "h": 2
+      }
+    },
+    "slopes": {
+      "left": {
+        "col": 0,
+        "row": 4
+      },
+      "right": {
+        "col": 3,
+        "row": 4
+      }
+    },
+    "water": "/assets/terrain/tileset/water-background-color.png",
+    "foam": {
+      "file": "/assets/terrain/tileset/water-foam.png",
+      "cellW": 192,
+      "cellH": 192,
+      "frames": 16,
+      "fps": 8,
+      "loop": true,
+      "bbox": {
+        "left": 54,
+        "top": 58,
+        "right": 138,
+        "bottom": 142,
+        "w": 84,
+        "h": 84
+      },
+      "anchor": {
+        "x": 96.0,
+        "y": 96.0
+      }
+    },
+    "shadow": {
+      "file": "/assets/terrain/tileset/shadow.png",
+      "cellW": 192,
+      "cellH": 192,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 57,
+        "top": 56,
+        "right": 136,
+        "bottom": 136,
+        "w": 79,
+        "h": 80
+      },
+      "anchor": {
+        "x": 96.5,
+        "y": 96.0
+      }
+    }
+  },
+  "props": {
+    "bushe1": {
+      "file": "/assets/terrain/decorations/bushes/bushe1.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 8,
+      "fps": 7,
+      "loop": true,
+      "bbox": {
+        "left": 31,
+        "top": 33,
+        "right": 98,
+        "bottom": 79,
+        "w": 67,
+        "h": 46
+      },
+      "anchor": {
+        "x": 64.5,
+        "y": 79
+      },
+      "animated": true
+    },
+    "bushe2": {
+      "file": "/assets/terrain/decorations/bushes/bushe2.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 8,
+      "fps": 7,
+      "loop": true,
+      "bbox": {
+        "left": 41,
+        "top": 42,
+        "right": 87,
+        "bottom": 76,
+        "w": 46,
+        "h": 34
+      },
+      "anchor": {
+        "x": 64.0,
+        "y": 76
+      },
+      "animated": true
+    },
+    "bushe3": {
+      "file": "/assets/terrain/decorations/bushes/bushe3.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 8,
+      "fps": 7,
+      "loop": true,
+      "bbox": {
+        "left": 23,
+        "top": 25,
+        "right": 101,
+        "bottom": 84,
+        "w": 78,
+        "h": 59
+      },
+      "anchor": {
+        "x": 62.0,
+        "y": 84
+      },
+      "animated": true
+    },
+    "bushe4": {
+      "file": "/assets/terrain/decorations/bushes/bushe4.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 8,
+      "fps": 7,
+      "loop": true,
+      "bbox": {
+        "left": 40,
+        "top": 37,
+        "right": 86,
+        "bottom": 79,
+        "w": 46,
+        "h": 42
+      },
+      "anchor": {
+        "x": 63.0,
+        "y": 79
+      },
+      "animated": true
+    },
+    "clouds-01": {
+      "file": "/assets/terrain/decorations/clouds/clouds-01.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 38,
+        "top": 42,
+        "right": 533,
+        "bottom": 199,
+        "w": 495,
+        "h": 157
+      },
+      "anchor": {
+        "x": 285.5,
+        "y": 199
+      },
+      "animated": false
+    },
+    "clouds-02": {
+      "file": "/assets/terrain/decorations/clouds/clouds-02.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 133,
+        "top": 85,
+        "right": 440,
+        "bottom": 195,
+        "w": 307,
+        "h": 110
+      },
+      "anchor": {
+        "x": 286.5,
+        "y": 195
+      },
+      "animated": false
+    },
+    "clouds-03": {
+      "file": "/assets/terrain/decorations/clouds/clouds-03.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 205,
+        "top": 102,
+        "right": 370,
+        "bottom": 177,
+        "w": 165,
+        "h": 75
+      },
+      "anchor": {
+        "x": 287.5,
+        "y": 177
+      },
+      "animated": false
+    },
+    "clouds-04": {
+      "file": "/assets/terrain/decorations/clouds/clouds-04.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 234,
+        "top": 115,
+        "right": 340,
+        "bottom": 172,
+        "w": 106,
+        "h": 57
+      },
+      "anchor": {
+        "x": 287.0,
+        "y": 172
+      },
+      "animated": false
+    },
+    "clouds-05": {
+      "file": "/assets/terrain/decorations/clouds/clouds-05.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 76,
+        "top": 49,
+        "right": 492,
+        "bottom": 201,
+        "w": 416,
+        "h": 152
+      },
+      "anchor": {
+        "x": 284.0,
+        "y": 201
+      },
+      "animated": false
+    },
+    "clouds-06": {
+      "file": "/assets/terrain/decorations/clouds/clouds-06.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 141,
+        "top": 90,
+        "right": 447,
+        "bottom": 189,
+        "w": 306,
+        "h": 99
+      },
+      "anchor": {
+        "x": 294.0,
+        "y": 189
+      },
+      "animated": false
+    },
+    "clouds-07": {
+      "file": "/assets/terrain/decorations/clouds/clouds-07.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 212,
+        "top": 92,
+        "right": 368,
+        "bottom": 175,
+        "w": 156,
+        "h": 83
+      },
+      "anchor": {
+        "x": 290.0,
+        "y": 175
+      },
+      "animated": false
+    },
+    "clouds-08": {
+      "file": "/assets/terrain/decorations/clouds/clouds-08.png",
+      "cellW": 576,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 238,
+        "top": 109,
+        "right": 326,
+        "bottom": 164,
+        "w": 88,
+        "h": 55
+      },
+      "anchor": {
+        "x": 282.0,
+        "y": 164
+      },
+      "animated": false
+    },
+    "rock1": {
+      "file": "/assets/terrain/decorations/rocks/rock1.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 15,
+        "top": 25,
+        "right": 47,
+        "bottom": 51,
+        "w": 32,
+        "h": 26
+      },
+      "anchor": {
+        "x": 31.0,
+        "y": 51
+      },
+      "animated": false
+    },
+    "rock2": {
+      "file": "/assets/terrain/decorations/rocks/rock2.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 7,
+        "top": 17,
+        "right": 57,
+        "bottom": 53,
+        "w": 50,
+        "h": 36
+      },
+      "anchor": {
+        "x": 32.0,
+        "y": 53
+      },
+      "animated": false
+    },
+    "rock3": {
+      "file": "/assets/terrain/decorations/rocks/rock3.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 14,
+        "top": 23,
+        "right": 53,
+        "bottom": 52,
+        "w": 39,
+        "h": 29
+      },
+      "anchor": {
+        "x": 33.5,
+        "y": 52
+      },
+      "animated": false
+    },
+    "rock4": {
+      "file": "/assets/terrain/decorations/rocks/rock4.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 2,
+        "top": 14,
+        "right": 61,
+        "bottom": 56,
+        "w": 59,
+        "h": 42
+      },
+      "anchor": {
+        "x": 31.5,
+        "y": 56
+      },
+      "animated": false
+    },
+    "water-rocks-01": {
+      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-01.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 16,
+      "fps": 10,
+      "loop": true,
+      "bbox": {
+        "left": 17,
+        "top": 25,
+        "right": 46,
+        "bottom": 48,
+        "w": 29,
+        "h": 23
+      },
+      "anchor": {
+        "x": 31.5,
+        "y": 48
+      },
+      "animated": true
+    },
+    "water-rocks-02": {
+      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-02.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 16,
+      "fps": 10,
+      "loop": true,
+      "bbox": {
+        "left": 7,
+        "top": 17,
+        "right": 57,
+        "bottom": 50,
+        "w": 50,
+        "h": 33
+      },
+      "anchor": {
+        "x": 32.0,
+        "y": 50
+      },
+      "animated": true
+    },
+    "water-rocks-03": {
+      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-03.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 16,
+      "fps": 10,
+      "loop": true,
+      "bbox": {
+        "left": 15,
+        "top": 23,
+        "right": 51,
+        "bottom": 48,
+        "w": 36,
+        "h": 25
+      },
+      "anchor": {
+        "x": 33.0,
+        "y": 48
+      },
+      "animated": true
+    },
+    "water-rocks-04": {
+      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-04.png",
+      "cellW": 64,
+      "cellH": 64,
+      "frames": 16,
+      "fps": 10,
+      "loop": true,
+      "bbox": {
+        "left": 6,
+        "top": 14,
+        "right": 57,
+        "bottom": 52,
+        "w": 51,
+        "h": 38
+      },
+      "anchor": {
+        "x": 31.5,
+        "y": 52
+      },
+      "animated": true
+    },
+    "rubber-duck": {
+      "file": "/assets/terrain/decorations/rubber-duck/rubber-duck.png",
+      "cellW": 32,
+      "cellH": 32,
+      "frames": 3,
+      "fps": 6,
+      "loop": true,
+      "bbox": {
+        "left": 0,
+        "top": 5,
+        "right": 32,
+        "bottom": 28,
+        "w": 32,
+        "h": 23
+      },
+      "anchor": {
+        "x": 16.0,
+        "y": 28
+      },
+      "animated": true
+    },
+    "stump-1": {
+      "file": "/assets/terrain/resources/wood/trees/stump-1.png",
+      "cellW": 192,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 75,
+        "top": 200,
+        "right": 123,
+        "bottom": 240,
+        "w": 48,
+        "h": 40
+      },
+      "anchor": {
+        "x": 99.0,
+        "y": 240
+      },
+      "animated": false
+    },
+    "stump-2": {
+      "file": "/assets/terrain/resources/wood/trees/stump-2.png",
+      "cellW": 192,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 73,
+        "top": 210,
+        "right": 116,
+        "bottom": 245,
+        "w": 43,
+        "h": 35
+      },
+      "anchor": {
+        "x": 94.5,
+        "y": 245
+      },
+      "animated": false
+    },
+    "stump-3": {
+      "file": "/assets/terrain/resources/wood/trees/stump-3.png",
+      "cellW": 192,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 85,
+        "top": 197,
+        "right": 109,
+        "bottom": 232,
+        "w": 24,
+        "h": 35
+      },
+      "anchor": {
+        "x": 97.0,
+        "y": 232
+      },
+      "animated": false
+    },
+    "stump-4": {
+      "file": "/assets/terrain/resources/wood/trees/stump-4.png",
+      "cellW": 192,
+      "cellH": 256,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 86,
+        "top": 202,
+        "right": 112,
+        "bottom": 228,
+        "w": 26,
+        "h": 26
+      },
+      "anchor": {
+        "x": 99.0,
+        "y": 228
+      },
+      "animated": false
+    },
+    "tree1": {
+      "file": "/assets/terrain/resources/wood/trees/tree1.png",
+      "cellW": 192,
+      "cellH": 256,
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "bbox": {
+        "left": 37,
+        "top": 51,
+        "right": 156,
+        "bottom": 241,
+        "w": 119,
+        "h": 190
+      },
+      "anchor": {
+        "x": 96.5,
+        "y": 241
+      },
+      "animated": true
+    },
+    "tree2": {
+      "file": "/assets/terrain/resources/wood/trees/tree2.png",
+      "cellW": 192,
+      "cellH": 256,
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "bbox": {
+        "left": 43,
+        "top": 5,
+        "right": 149,
+        "bottom": 249,
+        "w": 106,
+        "h": 244
+      },
+      "anchor": {
+        "x": 96.0,
+        "y": 249
+      },
+      "animated": true
+    },
+    "tree3": {
+      "file": "/assets/terrain/resources/wood/trees/tree3.png",
+      "cellW": 192,
+      "cellH": 192,
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "bbox": {
+        "left": 51,
+        "top": 24,
+        "right": 141,
+        "bottom": 170,
+        "w": 90,
+        "h": 146
+      },
+      "anchor": {
+        "x": 96.0,
+        "y": 170
+      },
+      "animated": true
+    },
+    "tree4": {
+      "file": "/assets/terrain/resources/wood/trees/tree4.png",
+      "cellW": 192,
+      "cellH": 192,
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "bbox": {
+        "left": 56,
+        "top": 46,
+        "right": 136,
+        "bottom": 168,
+        "w": 80,
+        "h": 122
+      },
+      "anchor": {
+        "x": 96.0,
+        "y": 168
+      },
+      "animated": true
+    },
+    "gold-stone-1-highlight": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-1-highlight.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 48,
+        "top": 50,
+        "right": 80,
+        "bottom": 79,
+        "w": 32,
+        "h": 29
+      },
+      "anchor": {
+        "x": 64.0,
+        "y": 79
+      },
+      "animated": true
+    },
+    "gold-stone-1": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-1.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 48,
+        "top": 50,
+        "right": 80,
+        "bottom": 79,
+        "w": 32,
+        "h": 29
+      },
+      "anchor": {
+        "x": 64.0,
+        "y": 79
+      },
+      "animated": false
+    },
+    "gold-stone-2-highlight": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-2-highlight.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 49,
+        "top": 47,
+        "right": 82,
+        "bottom": 75,
+        "w": 33,
+        "h": 28
+      },
+      "anchor": {
+        "x": 65.5,
+        "y": 75
+      },
+      "animated": true
+    },
+    "gold-stone-2": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-2.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 49,
+        "top": 47,
+        "right": 82,
+        "bottom": 75,
+        "w": 33,
+        "h": 28
+      },
+      "anchor": {
+        "x": 65.5,
+        "y": 75
+      },
+      "animated": false
+    },
+    "gold-stone-3-highlight": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-3-highlight.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 34,
+        "top": 36,
+        "right": 92,
+        "bottom": 88,
+        "w": 58,
+        "h": 52
+      },
+      "anchor": {
+        "x": 63.0,
+        "y": 88
+      },
+      "animated": true
+    },
+    "gold-stone-3": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-3.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 34,
+        "top": 36,
+        "right": 92,
+        "bottom": 88,
+        "w": 58,
+        "h": 52
+      },
+      "anchor": {
+        "x": 63.0,
+        "y": 88
+      },
+      "animated": false
+    },
+    "gold-stone-4-highlight": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-4-highlight.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 35,
+        "top": 31,
+        "right": 98,
+        "bottom": 86,
+        "w": 63,
+        "h": 55
+      },
+      "anchor": {
+        "x": 66.5,
+        "y": 86
+      },
+      "animated": true
+    },
+    "gold-stone-4": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-4.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 35,
+        "top": 31,
+        "right": 98,
+        "bottom": 86,
+        "w": 63,
+        "h": 55
+      },
+      "anchor": {
+        "x": 66.5,
+        "y": 86
+      },
+      "animated": false
+    },
+    "gold-stone-5-highlight": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-5-highlight.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 28,
+        "top": 20,
+        "right": 102,
+        "bottom": 100,
+        "w": 74,
+        "h": 80
+      },
+      "anchor": {
+        "x": 65.0,
+        "y": 100
+      },
+      "animated": true
+    },
+    "gold-stone-5": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-5.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 28,
+        "top": 20,
+        "right": 102,
+        "bottom": 100,
+        "w": 74,
+        "h": 80
+      },
+      "anchor": {
+        "x": 65.0,
+        "y": 100
+      },
+      "animated": false
+    },
+    "gold-stone-6-highlight": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-6-highlight.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 17,
+        "top": 17,
+        "right": 109,
+        "bottom": 98,
+        "w": 92,
+        "h": 81
+      },
+      "anchor": {
+        "x": 63.0,
+        "y": 98
+      },
+      "animated": true
+    },
+    "gold-stone-6": {
+      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-6.png",
+      "cellW": 128,
+      "cellH": 128,
+      "frames": 1,
+      "fps": 12,
+      "loop": true,
+      "bbox": {
+        "left": 17,
+        "top": 17,
+        "right": 109,
+        "bottom": 98,
+        "w": 92,
+        "h": 81
+      },
+      "anchor": {
+        "x": 63.0,
+        "y": 98
+      },
+      "animated": false
+    }
+  },
+  "ui": {
+    "banners": [
+      "/assets/ui/banners/banner-slots.png",
+      "/assets/ui/banners/banner.png"
+    ],
+    "bars": [
+      "/assets/ui/bars/bigbar-base.png",
+      "/assets/ui/bars/bigbar-fill.png",
+      "/assets/ui/bars/smallbar-base.png",
+      "/assets/ui/bars/smallbar-fill.png"
+    ],
+    "buttons": [
+      "/assets/ui/buttons/bigbluebutton-pressed.png",
+      "/assets/ui/buttons/bigbluebutton-regular.png",
+      "/assets/ui/buttons/bigredbutton-pressed.png",
+      "/assets/ui/buttons/bigredbutton-regular.png",
+      "/assets/ui/buttons/smallblueroundbutton-pressed.png",
+      "/assets/ui/buttons/smallblueroundbutton-regular.png",
+      "/assets/ui/buttons/smallbluesquarebutton-pressed.png",
+      "/assets/ui/buttons/smallbluesquarebutton-regular.png",
+      "/assets/ui/buttons/smallredroundbutton-pressed.png",
+      "/assets/ui/buttons/smallredroundbutton-regular.png",
+      "/assets/ui/buttons/smallredsquarebutton-pressed.png",
+      "/assets/ui/buttons/smallredsquarebutton-regular.png",
+      "/assets/ui/buttons/tinyroundbluebutton.png",
+      "/assets/ui/buttons/tinyroundredbutton.png",
+      "/assets/ui/buttons/tinysquarebluebutton.png",
+      "/assets/ui/buttons/tinysquareredbutton.png"
+    ],
+    "cursors": [
+      "/assets/ui/cursors/cursor-01.png",
+      "/assets/ui/cursors/cursor-02.png",
+      "/assets/ui/cursors/cursor-03.png",
+      "/assets/ui/cursors/cursor-04.png"
+    ],
+    "human-avatars": [
+      "/assets/ui/human-avatars/avatars-01.png",
+      "/assets/ui/human-avatars/avatars-02.png",
+      "/assets/ui/human-avatars/avatars-03.png",
+      "/assets/ui/human-avatars/avatars-04.png",
+      "/assets/ui/human-avatars/avatars-05.png",
+      "/assets/ui/human-avatars/avatars-06.png",
+      "/assets/ui/human-avatars/avatars-07.png",
+      "/assets/ui/human-avatars/avatars-08.png",
+      "/assets/ui/human-avatars/avatars-09.png",
+      "/assets/ui/human-avatars/avatars-10.png",
+      "/assets/ui/human-avatars/avatars-11.png",
+      "/assets/ui/human-avatars/avatars-12.png",
+      "/assets/ui/human-avatars/avatars-13.png",
+      "/assets/ui/human-avatars/avatars-14.png",
+      "/assets/ui/human-avatars/avatars-15.png",
+      "/assets/ui/human-avatars/avatars-16.png",
+      "/assets/ui/human-avatars/avatars-17.png",
+      "/assets/ui/human-avatars/avatars-18.png",
+      "/assets/ui/human-avatars/avatars-19.png",
+      "/assets/ui/human-avatars/avatars-20.png",
+      "/assets/ui/human-avatars/avatars-21.png",
+      "/assets/ui/human-avatars/avatars-22.png",
+      "/assets/ui/human-avatars/avatars-23.png",
+      "/assets/ui/human-avatars/avatars-24.png",
+      "/assets/ui/human-avatars/avatars-25.png"
+    ],
+    "icons": [
+      "/assets/ui/icons/icon-01.png",
+      "/assets/ui/icons/icon-02.png",
+      "/assets/ui/icons/icon-03.png",
+      "/assets/ui/icons/icon-04.png",
+      "/assets/ui/icons/icon-05.png",
+      "/assets/ui/icons/icon-06.png",
+      "/assets/ui/icons/icon-07.png",
+      "/assets/ui/icons/icon-08.png",
+      "/assets/ui/icons/icon-09.png",
+      "/assets/ui/icons/icon-10.png",
+      "/assets/ui/icons/icon-11.png",
+      "/assets/ui/icons/icon-12.png"
+    ],
+    "papers": [
+      "/assets/ui/papers/regularpaper.png",
+      "/assets/ui/papers/specialpaper.png"
+    ],
+    "ribbons": [
+      "/assets/ui/ribbons/bigribbons.png",
+      "/assets/ui/ribbons/smallribbons.png"
+    ],
+    "store-banners": [],
+    "swords": [
+      "/assets/ui/swords/swords.png"
+    ],
+    "wood-table": [
+      "/assets/ui/wood-table/woodtable-slots.png",
+      "/assets/ui/wood-table/woodtable.png"
+    ],
+    "avatar": {
+      "file": "/assets/ui/human-avatars/avatars-01.png",
+      "bbox": {
+        "left": 22,
+        "top": 31,
+        "right": 219,
+        "bottom": 213,
+        "w": 197,
+        "h": 182
+      }
+    }
+  }
+}
