@@ -20,7 +20,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 58,
@@ -60,8 +60,8 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 56,
             "top": 46,
@@ -109,8 +109,8 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 143,
             "top": 151,
@@ -129,7 +129,7 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
-          "fps": 12,
+          "fps": 10,
           "loop": true,
           "bbox": {
             "left": 143,
@@ -149,8 +149,8 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 144,
             "top": 139,
@@ -169,7 +169,7 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
-          "fps": 12,
+          "fps": 10,
           "loop": true,
           "bbox": {
             "left": 126,
@@ -189,7 +189,7 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 12,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 115,
@@ -209,8 +209,8 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 144,
             "top": 125,
@@ -229,7 +229,7 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
-          "fps": 12,
+          "fps": 10,
           "loop": true,
           "bbox": {
             "left": 123,
@@ -269,8 +269,8 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 126,
             "top": 46,
@@ -289,7 +289,7 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
-          "fps": 12,
+          "fps": 10,
           "loop": true,
           "bbox": {
             "left": 123,
@@ -309,8 +309,8 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 134,
             "top": 88,
@@ -329,7 +329,7 @@
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
-          "fps": 12,
+          "fps": 10,
           "loop": true,
           "bbox": {
             "left": 133,
@@ -447,7 +447,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 56,
@@ -467,7 +467,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 69,
@@ -487,7 +487,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 69,
@@ -507,7 +507,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 69,
@@ -527,7 +527,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 69,
@@ -547,7 +547,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 60,
@@ -567,7 +567,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 69,
@@ -587,7 +587,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 69,
@@ -856,8 +856,8 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 4,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 57,
             "top": 47,
@@ -876,8 +876,8 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 4,
-          "fps": 12,
-          "loop": true,
+          "fps": 14,
+          "loop": false,
           "bbox": {
             "left": 41,
             "top": 51,
@@ -896,7 +896,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
-          "fps": 12,
+          "fps": 10,
           "loop": true,
           "bbox": {
             "left": 57,
@@ -916,7 +916,7 @@
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
-          "fps": 12,
+          "fps": 8,
           "loop": true,
           "bbox": {
             "left": 62,
@@ -1814,7 +1814,7 @@
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
-      "fps": 12,
+      "fps": 8,
       "loop": true,
       "bbox": {
         "left": 48,
@@ -1856,7 +1856,7 @@
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
-      "fps": 12,
+      "fps": 8,
       "loop": true,
       "bbox": {
         "left": 49,
@@ -1898,7 +1898,7 @@
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
-      "fps": 12,
+      "fps": 8,
       "loop": true,
       "bbox": {
         "left": 34,
@@ -1940,7 +1940,7 @@
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
-      "fps": 12,
+      "fps": 8,
       "loop": true,
       "bbox": {
         "left": 35,
@@ -1982,7 +1982,7 @@
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
-      "fps": 12,
+      "fps": 8,
       "loop": true,
       "bbox": {
         "left": 28,
@@ -2024,7 +2024,7 @@
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
-      "fps": 12,
+      "fps": 8,
       "loop": true,
       "bbox": {
         "left": 17,

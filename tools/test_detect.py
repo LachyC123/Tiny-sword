@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """
-Regression test for the frame detector in build_manifest.py.
+Regression tests for build_manifest.py.
 
-Every expectation below was established by rendering the sheet and counting
-frames by eye. Run from the repo root:  python3 tools/test_detect.py
+1. Frame detection — every expectation was established by rendering the sheet
+   and counting frames by eye.
+2. Playback metadata in the generated manifest. A mis-keyed fps/loop lookup
+   once made attacks loop, which froze units mid-swing forever: they never left
+   their attack state, so they could not move or act. Screenshots cannot catch
+   that (a stuck swing looks like a swing), so assert it here.
+
+Run from the repo root:  python3 tools/test_detect.py
 """
 import sys
 sys.path.insert(0, "tools")
@@ -58,8 +64,59 @@ for p, exp in EXPECT.items():
     ok = n == exp
     bad += 0 if ok else 1
     print(f"{'ok  ' if ok else 'FAIL'} {n:>3} (want {exp:>3})  cell {cw}x{im.size[1]:<4}  {p.split('/')[-1]}")
-print(f"\n{len(EXPECT)-bad}/{len(EXPECT)} correct")
-sys.exit(1 if bad else 0)
+print(f"\n{len(EXPECT)-bad}/{len(EXPECT)} frame counts correct")
+
+# --- playback metadata ------------------------------------------------------
+import json
+
+MANIFEST = "assets/manifest.json"
+try:
+    man = json.load(open(MANIFEST))
+except FileNotFoundError:
+    print(f"SKIP playback checks — run tools/build_manifest.py first")
+    sys.exit(1 if bad else 0)
+
+# One-shot clips MUST NOT loop, or the unit state machine never advances.
+ONE_SHOT = {"attack1", "attack2", "shoot", "heal", "heal-effect"}
+LOOPING = {"idle", "run", "guard"}
+
+print()
+pbad = 0
+for uname, u in man["units"].items():
+    for cname, clip in u["anims"].items():
+        base = cname.split("-")[0] if cname.startswith(("up", "down", "right")) else cname
+        want_loop = None
+        if cname in ONE_SHOT or cname.endswith("-attack"):
+            want_loop = False
+        elif cname in LOOPING:
+            want_loop = True
+        if want_loop is None:
+            continue
+        ok = clip["loop"] == want_loop
+        pbad += 0 if ok else 1
+        if not ok:
+            print(f"FAIL {uname}.{cname}: loop={clip['loop']}, want {want_loop}")
+        if clip["frames"] < 1:
+            print(f"FAIL {uname}.{cname}: frames={clip['frames']}")
+            pbad += 1
+        if not (1 <= clip["fps"] <= 60):
+            print(f"FAIL {uname}.{cname}: fps={clip['fps']} out of range")
+            pbad += 1
+
+# Anchors must exist, or sprites render from the cell corner.
+for uname, u in man["units"].items():
+    if not u.get("anchor"):
+        print(f"FAIL {uname}: missing foot anchor")
+        pbad += 1
+
+# Paths must stay relative so the game works under a subdirectory (Pages).
+raw = open(MANIFEST).read()
+if '"/assets/' in raw:
+    print("FAIL manifest contains absolute /assets/ paths")
+    pbad += 1
+
+print(f"playback metadata: {'ok' if pbad == 0 else str(pbad) + ' problems'}")
+sys.exit(1 if (bad or pbad) else 0)
 import sys
 sys.path.insert(0, "tools")
 from PIL import Image
@@ -113,5 +170,56 @@ for p, exp in EXPECT.items():
     ok = n == exp
     bad += 0 if ok else 1
     print(f"{'ok  ' if ok else 'FAIL'} {n:>3} (want {exp:>3})  cell {cw}x{im.size[1]:<4}  {p.split('/')[-1]}")
-print(f"\n{len(EXPECT)-bad}/{len(EXPECT)} correct")
-sys.exit(1 if bad else 0)
+print(f"\n{len(EXPECT)-bad}/{len(EXPECT)} frame counts correct")
+
+# --- playback metadata ------------------------------------------------------
+import json
+
+MANIFEST = "assets/manifest.json"
+try:
+    man = json.load(open(MANIFEST))
+except FileNotFoundError:
+    print(f"SKIP playback checks — run tools/build_manifest.py first")
+    sys.exit(1 if bad else 0)
+
+# One-shot clips MUST NOT loop, or the unit state machine never advances.
+ONE_SHOT = {"attack1", "attack2", "shoot", "heal", "heal-effect"}
+LOOPING = {"idle", "run", "guard"}
+
+print()
+pbad = 0
+for uname, u in man["units"].items():
+    for cname, clip in u["anims"].items():
+        base = cname.split("-")[0] if cname.startswith(("up", "down", "right")) else cname
+        want_loop = None
+        if cname in ONE_SHOT or cname.endswith("-attack"):
+            want_loop = False
+        elif cname in LOOPING:
+            want_loop = True
+        if want_loop is None:
+            continue
+        ok = clip["loop"] == want_loop
+        pbad += 0 if ok else 1
+        if not ok:
+            print(f"FAIL {uname}.{cname}: loop={clip['loop']}, want {want_loop}")
+        if clip["frames"] < 1:
+            print(f"FAIL {uname}.{cname}: frames={clip['frames']}")
+            pbad += 1
+        if not (1 <= clip["fps"] <= 60):
+            print(f"FAIL {uname}.{cname}: fps={clip['fps']} out of range")
+            pbad += 1
+
+# Anchors must exist, or sprites render from the cell corner.
+for uname, u in man["units"].items():
+    if not u.get("anchor"):
+        print(f"FAIL {uname}: missing foot anchor")
+        pbad += 1
+
+# Paths must stay relative so the game works under a subdirectory (Pages).
+raw = open(MANIFEST).read()
+if '"/assets/' in raw:
+    print("FAIL manifest contains absolute /assets/ paths")
+    pbad += 1
+
+print(f"playback metadata: {'ok' if pbad == 0 else str(pbad) + ' problems'}")
+sys.exit(1 if (bad or pbad) else 0)
