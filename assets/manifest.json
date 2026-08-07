@@ -16,7 +16,7 @@
       },
       "anims": {
         "idle": {
-          "file": "/assets/units/blue/archer/archer-idle.png",
+          "file": "assets/units/blue/archer/archer-idle.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -36,7 +36,7 @@
           }
         },
         "run": {
-          "file": "/assets/units/blue/archer/archer-run.png",
+          "file": "assets/units/blue/archer/archer-run.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 4,
@@ -56,7 +56,7 @@
           }
         },
         "shoot": {
-          "file": "/assets/units/blue/archer/archer-shoot.png",
+          "file": "assets/units/blue/archer/archer-shoot.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -77,7 +77,7 @@
         }
       },
       "projectile": {
-        "file": "/assets/units/blue/archer/arrow.png",
+        "file": "assets/units/blue/archer/arrow.png",
         "cellW": 64,
         "cellH": 64,
         "frames": 1,
@@ -105,7 +105,7 @@
       },
       "anims": {
         "down-attack": {
-          "file": "/assets/units/blue/lancer/lancer-down-attack.png",
+          "file": "assets/units/blue/lancer/lancer-down-attack.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
@@ -125,7 +125,7 @@
           }
         },
         "down-defence": {
-          "file": "/assets/units/blue/lancer/lancer-down-defence.png",
+          "file": "assets/units/blue/lancer/lancer-down-defence.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
@@ -145,7 +145,7 @@
           }
         },
         "downright-attack": {
-          "file": "/assets/units/blue/lancer/lancer-downright-attack.png",
+          "file": "assets/units/blue/lancer/lancer-downright-attack.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
@@ -165,7 +165,7 @@
           }
         },
         "downright-defence": {
-          "file": "/assets/units/blue/lancer/lancer-downright-defence.png",
+          "file": "assets/units/blue/lancer/lancer-downright-defence.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
@@ -185,7 +185,7 @@
           }
         },
         "idle": {
-          "file": "/assets/units/blue/lancer/lancer-idle.png",
+          "file": "assets/units/blue/lancer/lancer-idle.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 12,
@@ -205,7 +205,7 @@
           }
         },
         "right-attack": {
-          "file": "/assets/units/blue/lancer/lancer-right-attack.png",
+          "file": "assets/units/blue/lancer/lancer-right-attack.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
@@ -225,7 +225,7 @@
           }
         },
         "right-defence": {
-          "file": "/assets/units/blue/lancer/lancer-right-defence.png",
+          "file": "assets/units/blue/lancer/lancer-right-defence.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
@@ -245,7 +245,7 @@
           }
         },
         "run": {
-          "file": "/assets/units/blue/lancer/lancer-run.png",
+          "file": "assets/units/blue/lancer/lancer-run.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
@@ -265,7 +265,7 @@
           }
         },
         "up-attack": {
-          "file": "/assets/units/blue/lancer/lancer-up-attack.png",
+          "file": "assets/units/blue/lancer/lancer-up-attack.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
@@ -285,7 +285,7 @@
           }
         },
         "up-defence": {
-          "file": "/assets/units/blue/lancer/lancer-up-defence.png",
+          "file": "assets/units/blue/lancer/lancer-up-defence.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
@@ -305,7 +305,7 @@
           }
         },
         "upright-attack": {
-          "file": "/assets/units/blue/lancer/lancer-upright-attack.png",
+          "file": "assets/units/blue/lancer/lancer-upright-attack.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 3,
@@ -325,7 +325,7 @@
           }
         },
         "upright-defence": {
-          "file": "/assets/units/blue/lancer/lancer-upright-defence.png",
+          "file": "assets/units/blue/lancer/lancer-upright-defence.png",
           "cellW": 320,
           "cellH": 320,
           "frames": 6,
@@ -354,7 +354,7 @@
       },
       "anims": {
         "heal-effect": {
-          "file": "/assets/units/blue/monk/heal-effect.png",
+          "file": "assets/units/blue/monk/heal-effect.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 11,
@@ -374,7 +374,7 @@
           }
         },
         "heal": {
-          "file": "/assets/units/blue/monk/heal.png",
+          "file": "assets/units/blue/monk/heal.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 11,
@@ -394,7 +394,7 @@
           }
         },
         "idle": {
-          "file": "/assets/units/blue/monk/idle.png",
+          "file": "assets/units/blue/monk/idle.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -414,7 +414,7 @@
           }
         },
         "run": {
-          "file": "/assets/units/blue/monk/run.png",
+          "file": "assets/units/blue/monk/run.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 4,
@@ -443,7 +443,7 @@
       },
       "anims": {
         "idle-axe": {
-          "file": "/assets/units/blue/pawn/pawn-idle-axe.png",
+          "file": "assets/units/blue/pawn/pawn-idle-axe.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -463,7 +463,7 @@
           }
         },
         "idle-gold": {
-          "file": "/assets/units/blue/pawn/pawn-idle-gold.png",
+          "file": "assets/units/blue/pawn/pawn-idle-gold.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -483,7 +483,7 @@
           }
         },
         "idle-hammer": {
-          "file": "/assets/units/blue/pawn/pawn-idle-hammer.png",
+          "file": "assets/units/blue/pawn/pawn-idle-hammer.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -503,7 +503,7 @@
           }
         },
         "idle-knife": {
-          "file": "/assets/units/blue/pawn/pawn-idle-knife.png",
+          "file": "assets/units/blue/pawn/pawn-idle-knife.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -523,7 +523,7 @@
           }
         },
         "idle-meat": {
-          "file": "/assets/units/blue/pawn/pawn-idle-meat.png",
+          "file": "assets/units/blue/pawn/pawn-idle-meat.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -543,7 +543,7 @@
           }
         },
         "idle-pickaxe": {
-          "file": "/assets/units/blue/pawn/pawn-idle-pickaxe.png",
+          "file": "assets/units/blue/pawn/pawn-idle-pickaxe.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -563,7 +563,7 @@
           }
         },
         "idle-wood": {
-          "file": "/assets/units/blue/pawn/pawn-idle-wood.png",
+          "file": "assets/units/blue/pawn/pawn-idle-wood.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -583,7 +583,7 @@
           }
         },
         "idle": {
-          "file": "/assets/units/blue/pawn/pawn-idle.png",
+          "file": "assets/units/blue/pawn/pawn-idle.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -603,7 +603,7 @@
           }
         },
         "interact-axe": {
-          "file": "/assets/units/blue/pawn/pawn-interact-axe.png",
+          "file": "assets/units/blue/pawn/pawn-interact-axe.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -623,7 +623,7 @@
           }
         },
         "interact-hammer": {
-          "file": "/assets/units/blue/pawn/pawn-interact-hammer.png",
+          "file": "assets/units/blue/pawn/pawn-interact-hammer.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 3,
@@ -643,7 +643,7 @@
           }
         },
         "interact-knife": {
-          "file": "/assets/units/blue/pawn/pawn-interact-knife.png",
+          "file": "assets/units/blue/pawn/pawn-interact-knife.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 4,
@@ -663,7 +663,7 @@
           }
         },
         "interact-pickaxe": {
-          "file": "/assets/units/blue/pawn/pawn-interact-pickaxe.png",
+          "file": "assets/units/blue/pawn/pawn-interact-pickaxe.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -683,7 +683,7 @@
           }
         },
         "run-axe": {
-          "file": "/assets/units/blue/pawn/pawn-run-axe.png",
+          "file": "assets/units/blue/pawn/pawn-run-axe.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -703,7 +703,7 @@
           }
         },
         "run-gold": {
-          "file": "/assets/units/blue/pawn/pawn-run-gold.png",
+          "file": "assets/units/blue/pawn/pawn-run-gold.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -723,7 +723,7 @@
           }
         },
         "run-hammer": {
-          "file": "/assets/units/blue/pawn/pawn-run-hammer.png",
+          "file": "assets/units/blue/pawn/pawn-run-hammer.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -743,7 +743,7 @@
           }
         },
         "run-knife": {
-          "file": "/assets/units/blue/pawn/pawn-run-knife.png",
+          "file": "assets/units/blue/pawn/pawn-run-knife.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -763,7 +763,7 @@
           }
         },
         "run-meat": {
-          "file": "/assets/units/blue/pawn/pawn-run-meat.png",
+          "file": "assets/units/blue/pawn/pawn-run-meat.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -783,7 +783,7 @@
           }
         },
         "run-pickaxe": {
-          "file": "/assets/units/blue/pawn/pawn-run-pickaxe.png",
+          "file": "assets/units/blue/pawn/pawn-run-pickaxe.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -803,7 +803,7 @@
           }
         },
         "run-wood": {
-          "file": "/assets/units/blue/pawn/pawn-run-wood.png",
+          "file": "assets/units/blue/pawn/pawn-run-wood.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -823,7 +823,7 @@
           }
         },
         "run": {
-          "file": "/assets/units/blue/pawn/pawn-run.png",
+          "file": "assets/units/blue/pawn/pawn-run.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -852,7 +852,7 @@
       },
       "anims": {
         "attack1": {
-          "file": "/assets/units/blue/warrior/warrior-attack1.png",
+          "file": "assets/units/blue/warrior/warrior-attack1.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 4,
@@ -872,7 +872,7 @@
           }
         },
         "attack2": {
-          "file": "/assets/units/blue/warrior/warrior-attack2.png",
+          "file": "assets/units/blue/warrior/warrior-attack2.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 4,
@@ -892,7 +892,7 @@
           }
         },
         "guard": {
-          "file": "/assets/units/blue/warrior/warrior-guard.png",
+          "file": "assets/units/blue/warrior/warrior-guard.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -912,7 +912,7 @@
           }
         },
         "idle": {
-          "file": "/assets/units/blue/warrior/warrior-idle.png",
+          "file": "assets/units/blue/warrior/warrior-idle.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 8,
@@ -932,7 +932,7 @@
           }
         },
         "run": {
-          "file": "/assets/units/blue/warrior/warrior-run.png",
+          "file": "assets/units/blue/warrior/warrior-run.png",
           "cellW": 192,
           "cellH": 192,
           "frames": 6,
@@ -956,7 +956,7 @@
   },
   "fx": {
     "dust-01": {
-      "file": "/assets/fx/dust-01.png",
+      "file": "assets/fx/dust-01.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 8,
@@ -976,7 +976,7 @@
       }
     },
     "dust-02": {
-      "file": "/assets/fx/dust-02.png",
+      "file": "assets/fx/dust-02.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 10,
@@ -996,7 +996,7 @@
       }
     },
     "explosion-01": {
-      "file": "/assets/fx/explosion-01.png",
+      "file": "assets/fx/explosion-01.png",
       "cellW": 192,
       "cellH": 192,
       "frames": 8,
@@ -1016,7 +1016,7 @@
       }
     },
     "explosion-02": {
-      "file": "/assets/fx/explosion-02.png",
+      "file": "assets/fx/explosion-02.png",
       "cellW": 192,
       "cellH": 192,
       "frames": 10,
@@ -1036,7 +1036,7 @@
       }
     },
     "fire-01": {
-      "file": "/assets/fx/fire-01.png",
+      "file": "assets/fx/fire-01.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 8,
@@ -1056,7 +1056,7 @@
       }
     },
     "fire-02": {
-      "file": "/assets/fx/fire-02.png",
+      "file": "assets/fx/fire-02.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 10,
@@ -1076,7 +1076,7 @@
       }
     },
     "fire-03": {
-      "file": "/assets/fx/fire-03.png",
+      "file": "assets/fx/fire-03.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 12,
@@ -1096,7 +1096,7 @@
       }
     },
     "water-splash": {
-      "file": "/assets/fx/water-splash.png",
+      "file": "assets/fx/water-splash.png",
       "cellW": 192,
       "cellH": 192,
       "frames": 9,
@@ -1119,11 +1119,11 @@
   "terrain": {
     "tile": 64,
     "tilemaps": [
-      "/assets/terrain/tileset/tilemap-color1.png",
-      "/assets/terrain/tileset/tilemap-color2.png",
-      "/assets/terrain/tileset/tilemap-color3.png",
-      "/assets/terrain/tileset/tilemap-color4.png",
-      "/assets/terrain/tileset/tilemap-color5.png"
+      "assets/terrain/tileset/tilemap-color1.png",
+      "assets/terrain/tileset/tilemap-color2.png",
+      "assets/terrain/tileset/tilemap-color3.png",
+      "assets/terrain/tileset/tilemap-color4.png",
+      "assets/terrain/tileset/tilemap-color5.png"
     ],
     "cols": 9,
     "rows": 6,
@@ -1157,9 +1157,9 @@
         "row": 4
       }
     },
-    "water": "/assets/terrain/tileset/water-background-color.png",
+    "water": "assets/terrain/tileset/water-background-color.png",
     "foam": {
-      "file": "/assets/terrain/tileset/water-foam.png",
+      "file": "assets/terrain/tileset/water-foam.png",
       "cellW": 192,
       "cellH": 192,
       "frames": 16,
@@ -1179,7 +1179,7 @@
       }
     },
     "shadow": {
-      "file": "/assets/terrain/tileset/shadow.png",
+      "file": "assets/terrain/tileset/shadow.png",
       "cellW": 192,
       "cellH": 192,
       "frames": 1,
@@ -1201,7 +1201,7 @@
   },
   "props": {
     "bushe1": {
-      "file": "/assets/terrain/decorations/bushes/bushe1.png",
+      "file": "assets/terrain/decorations/bushes/bushe1.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 8,
@@ -1222,7 +1222,7 @@
       "animated": true
     },
     "bushe2": {
-      "file": "/assets/terrain/decorations/bushes/bushe2.png",
+      "file": "assets/terrain/decorations/bushes/bushe2.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 8,
@@ -1243,7 +1243,7 @@
       "animated": true
     },
     "bushe3": {
-      "file": "/assets/terrain/decorations/bushes/bushe3.png",
+      "file": "assets/terrain/decorations/bushes/bushe3.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 8,
@@ -1264,7 +1264,7 @@
       "animated": true
     },
     "bushe4": {
-      "file": "/assets/terrain/decorations/bushes/bushe4.png",
+      "file": "assets/terrain/decorations/bushes/bushe4.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 8,
@@ -1285,7 +1285,7 @@
       "animated": true
     },
     "clouds-01": {
-      "file": "/assets/terrain/decorations/clouds/clouds-01.png",
+      "file": "assets/terrain/decorations/clouds/clouds-01.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1306,7 +1306,7 @@
       "animated": false
     },
     "clouds-02": {
-      "file": "/assets/terrain/decorations/clouds/clouds-02.png",
+      "file": "assets/terrain/decorations/clouds/clouds-02.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1327,7 +1327,7 @@
       "animated": false
     },
     "clouds-03": {
-      "file": "/assets/terrain/decorations/clouds/clouds-03.png",
+      "file": "assets/terrain/decorations/clouds/clouds-03.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1348,7 +1348,7 @@
       "animated": false
     },
     "clouds-04": {
-      "file": "/assets/terrain/decorations/clouds/clouds-04.png",
+      "file": "assets/terrain/decorations/clouds/clouds-04.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1369,7 +1369,7 @@
       "animated": false
     },
     "clouds-05": {
-      "file": "/assets/terrain/decorations/clouds/clouds-05.png",
+      "file": "assets/terrain/decorations/clouds/clouds-05.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1390,7 +1390,7 @@
       "animated": false
     },
     "clouds-06": {
-      "file": "/assets/terrain/decorations/clouds/clouds-06.png",
+      "file": "assets/terrain/decorations/clouds/clouds-06.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1411,7 +1411,7 @@
       "animated": false
     },
     "clouds-07": {
-      "file": "/assets/terrain/decorations/clouds/clouds-07.png",
+      "file": "assets/terrain/decorations/clouds/clouds-07.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1432,7 +1432,7 @@
       "animated": false
     },
     "clouds-08": {
-      "file": "/assets/terrain/decorations/clouds/clouds-08.png",
+      "file": "assets/terrain/decorations/clouds/clouds-08.png",
       "cellW": 576,
       "cellH": 256,
       "frames": 1,
@@ -1453,7 +1453,7 @@
       "animated": false
     },
     "rock1": {
-      "file": "/assets/terrain/decorations/rocks/rock1.png",
+      "file": "assets/terrain/decorations/rocks/rock1.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 1,
@@ -1474,7 +1474,7 @@
       "animated": false
     },
     "rock2": {
-      "file": "/assets/terrain/decorations/rocks/rock2.png",
+      "file": "assets/terrain/decorations/rocks/rock2.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 1,
@@ -1495,7 +1495,7 @@
       "animated": false
     },
     "rock3": {
-      "file": "/assets/terrain/decorations/rocks/rock3.png",
+      "file": "assets/terrain/decorations/rocks/rock3.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 1,
@@ -1516,7 +1516,7 @@
       "animated": false
     },
     "rock4": {
-      "file": "/assets/terrain/decorations/rocks/rock4.png",
+      "file": "assets/terrain/decorations/rocks/rock4.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 1,
@@ -1537,7 +1537,7 @@
       "animated": false
     },
     "water-rocks-01": {
-      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-01.png",
+      "file": "assets/terrain/decorations/rocks-in-the-water/water-rocks-01.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 16,
@@ -1558,7 +1558,7 @@
       "animated": true
     },
     "water-rocks-02": {
-      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-02.png",
+      "file": "assets/terrain/decorations/rocks-in-the-water/water-rocks-02.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 16,
@@ -1579,7 +1579,7 @@
       "animated": true
     },
     "water-rocks-03": {
-      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-03.png",
+      "file": "assets/terrain/decorations/rocks-in-the-water/water-rocks-03.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 16,
@@ -1600,7 +1600,7 @@
       "animated": true
     },
     "water-rocks-04": {
-      "file": "/assets/terrain/decorations/rocks-in-the-water/water-rocks-04.png",
+      "file": "assets/terrain/decorations/rocks-in-the-water/water-rocks-04.png",
       "cellW": 64,
       "cellH": 64,
       "frames": 16,
@@ -1621,7 +1621,7 @@
       "animated": true
     },
     "rubber-duck": {
-      "file": "/assets/terrain/decorations/rubber-duck/rubber-duck.png",
+      "file": "assets/terrain/decorations/rubber-duck/rubber-duck.png",
       "cellW": 32,
       "cellH": 32,
       "frames": 3,
@@ -1642,7 +1642,7 @@
       "animated": true
     },
     "stump-1": {
-      "file": "/assets/terrain/resources/wood/trees/stump-1.png",
+      "file": "assets/terrain/resources/wood/trees/stump-1.png",
       "cellW": 192,
       "cellH": 256,
       "frames": 1,
@@ -1663,7 +1663,7 @@
       "animated": false
     },
     "stump-2": {
-      "file": "/assets/terrain/resources/wood/trees/stump-2.png",
+      "file": "assets/terrain/resources/wood/trees/stump-2.png",
       "cellW": 192,
       "cellH": 256,
       "frames": 1,
@@ -1684,7 +1684,7 @@
       "animated": false
     },
     "stump-3": {
-      "file": "/assets/terrain/resources/wood/trees/stump-3.png",
+      "file": "assets/terrain/resources/wood/trees/stump-3.png",
       "cellW": 192,
       "cellH": 256,
       "frames": 1,
@@ -1705,7 +1705,7 @@
       "animated": false
     },
     "stump-4": {
-      "file": "/assets/terrain/resources/wood/trees/stump-4.png",
+      "file": "assets/terrain/resources/wood/trees/stump-4.png",
       "cellW": 192,
       "cellH": 256,
       "frames": 1,
@@ -1726,7 +1726,7 @@
       "animated": false
     },
     "tree1": {
-      "file": "/assets/terrain/resources/wood/trees/tree1.png",
+      "file": "assets/terrain/resources/wood/trees/tree1.png",
       "cellW": 192,
       "cellH": 256,
       "frames": 8,
@@ -1747,7 +1747,7 @@
       "animated": true
     },
     "tree2": {
-      "file": "/assets/terrain/resources/wood/trees/tree2.png",
+      "file": "assets/terrain/resources/wood/trees/tree2.png",
       "cellW": 192,
       "cellH": 256,
       "frames": 8,
@@ -1768,7 +1768,7 @@
       "animated": true
     },
     "tree3": {
-      "file": "/assets/terrain/resources/wood/trees/tree3.png",
+      "file": "assets/terrain/resources/wood/trees/tree3.png",
       "cellW": 192,
       "cellH": 192,
       "frames": 8,
@@ -1789,7 +1789,7 @@
       "animated": true
     },
     "tree4": {
-      "file": "/assets/terrain/resources/wood/trees/tree4.png",
+      "file": "assets/terrain/resources/wood/trees/tree4.png",
       "cellW": 192,
       "cellH": 192,
       "frames": 8,
@@ -1810,7 +1810,7 @@
       "animated": true
     },
     "gold-stone-1-highlight": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-1-highlight.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-1-highlight.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
@@ -1831,7 +1831,7 @@
       "animated": true
     },
     "gold-stone-1": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-1.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-1.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 1,
@@ -1852,7 +1852,7 @@
       "animated": false
     },
     "gold-stone-2-highlight": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-2-highlight.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-2-highlight.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
@@ -1873,7 +1873,7 @@
       "animated": true
     },
     "gold-stone-2": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-2.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-2.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 1,
@@ -1894,7 +1894,7 @@
       "animated": false
     },
     "gold-stone-3-highlight": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-3-highlight.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-3-highlight.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
@@ -1915,7 +1915,7 @@
       "animated": true
     },
     "gold-stone-3": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-3.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-3.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 1,
@@ -1936,7 +1936,7 @@
       "animated": false
     },
     "gold-stone-4-highlight": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-4-highlight.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-4-highlight.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
@@ -1957,7 +1957,7 @@
       "animated": true
     },
     "gold-stone-4": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-4.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-4.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 1,
@@ -1978,7 +1978,7 @@
       "animated": false
     },
     "gold-stone-5-highlight": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-5-highlight.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-5-highlight.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
@@ -1999,7 +1999,7 @@
       "animated": true
     },
     "gold-stone-5": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-5.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-5.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 1,
@@ -2020,7 +2020,7 @@
       "animated": false
     },
     "gold-stone-6-highlight": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-6-highlight.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-6-highlight.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 6,
@@ -2041,7 +2041,7 @@
       "animated": true
     },
     "gold-stone-6": {
-      "file": "/assets/terrain/resources/gold/gold-stones/gold-stone-6.png",
+      "file": "assets/terrain/resources/gold/gold-stones/gold-stone-6.png",
       "cellW": 128,
       "cellH": 128,
       "frames": 1,
@@ -2064,98 +2064,98 @@
   },
   "ui": {
     "banners": [
-      "/assets/ui/banners/banner-slots.png",
-      "/assets/ui/banners/banner.png"
+      "assets/ui/banners/banner-slots.png",
+      "assets/ui/banners/banner.png"
     ],
     "bars": [
-      "/assets/ui/bars/bigbar-base.png",
-      "/assets/ui/bars/bigbar-fill.png",
-      "/assets/ui/bars/smallbar-base.png",
-      "/assets/ui/bars/smallbar-fill.png"
+      "assets/ui/bars/bigbar-base.png",
+      "assets/ui/bars/bigbar-fill.png",
+      "assets/ui/bars/smallbar-base.png",
+      "assets/ui/bars/smallbar-fill.png"
     ],
     "buttons": [
-      "/assets/ui/buttons/bigbluebutton-pressed.png",
-      "/assets/ui/buttons/bigbluebutton-regular.png",
-      "/assets/ui/buttons/bigredbutton-pressed.png",
-      "/assets/ui/buttons/bigredbutton-regular.png",
-      "/assets/ui/buttons/smallblueroundbutton-pressed.png",
-      "/assets/ui/buttons/smallblueroundbutton-regular.png",
-      "/assets/ui/buttons/smallbluesquarebutton-pressed.png",
-      "/assets/ui/buttons/smallbluesquarebutton-regular.png",
-      "/assets/ui/buttons/smallredroundbutton-pressed.png",
-      "/assets/ui/buttons/smallredroundbutton-regular.png",
-      "/assets/ui/buttons/smallredsquarebutton-pressed.png",
-      "/assets/ui/buttons/smallredsquarebutton-regular.png",
-      "/assets/ui/buttons/tinyroundbluebutton.png",
-      "/assets/ui/buttons/tinyroundredbutton.png",
-      "/assets/ui/buttons/tinysquarebluebutton.png",
-      "/assets/ui/buttons/tinysquareredbutton.png"
+      "assets/ui/buttons/bigbluebutton-pressed.png",
+      "assets/ui/buttons/bigbluebutton-regular.png",
+      "assets/ui/buttons/bigredbutton-pressed.png",
+      "assets/ui/buttons/bigredbutton-regular.png",
+      "assets/ui/buttons/smallblueroundbutton-pressed.png",
+      "assets/ui/buttons/smallblueroundbutton-regular.png",
+      "assets/ui/buttons/smallbluesquarebutton-pressed.png",
+      "assets/ui/buttons/smallbluesquarebutton-regular.png",
+      "assets/ui/buttons/smallredroundbutton-pressed.png",
+      "assets/ui/buttons/smallredroundbutton-regular.png",
+      "assets/ui/buttons/smallredsquarebutton-pressed.png",
+      "assets/ui/buttons/smallredsquarebutton-regular.png",
+      "assets/ui/buttons/tinyroundbluebutton.png",
+      "assets/ui/buttons/tinyroundredbutton.png",
+      "assets/ui/buttons/tinysquarebluebutton.png",
+      "assets/ui/buttons/tinysquareredbutton.png"
     ],
     "cursors": [
-      "/assets/ui/cursors/cursor-01.png",
-      "/assets/ui/cursors/cursor-02.png",
-      "/assets/ui/cursors/cursor-03.png",
-      "/assets/ui/cursors/cursor-04.png"
+      "assets/ui/cursors/cursor-01.png",
+      "assets/ui/cursors/cursor-02.png",
+      "assets/ui/cursors/cursor-03.png",
+      "assets/ui/cursors/cursor-04.png"
     ],
     "human-avatars": [
-      "/assets/ui/human-avatars/avatars-01.png",
-      "/assets/ui/human-avatars/avatars-02.png",
-      "/assets/ui/human-avatars/avatars-03.png",
-      "/assets/ui/human-avatars/avatars-04.png",
-      "/assets/ui/human-avatars/avatars-05.png",
-      "/assets/ui/human-avatars/avatars-06.png",
-      "/assets/ui/human-avatars/avatars-07.png",
-      "/assets/ui/human-avatars/avatars-08.png",
-      "/assets/ui/human-avatars/avatars-09.png",
-      "/assets/ui/human-avatars/avatars-10.png",
-      "/assets/ui/human-avatars/avatars-11.png",
-      "/assets/ui/human-avatars/avatars-12.png",
-      "/assets/ui/human-avatars/avatars-13.png",
-      "/assets/ui/human-avatars/avatars-14.png",
-      "/assets/ui/human-avatars/avatars-15.png",
-      "/assets/ui/human-avatars/avatars-16.png",
-      "/assets/ui/human-avatars/avatars-17.png",
-      "/assets/ui/human-avatars/avatars-18.png",
-      "/assets/ui/human-avatars/avatars-19.png",
-      "/assets/ui/human-avatars/avatars-20.png",
-      "/assets/ui/human-avatars/avatars-21.png",
-      "/assets/ui/human-avatars/avatars-22.png",
-      "/assets/ui/human-avatars/avatars-23.png",
-      "/assets/ui/human-avatars/avatars-24.png",
-      "/assets/ui/human-avatars/avatars-25.png"
+      "assets/ui/human-avatars/avatars-01.png",
+      "assets/ui/human-avatars/avatars-02.png",
+      "assets/ui/human-avatars/avatars-03.png",
+      "assets/ui/human-avatars/avatars-04.png",
+      "assets/ui/human-avatars/avatars-05.png",
+      "assets/ui/human-avatars/avatars-06.png",
+      "assets/ui/human-avatars/avatars-07.png",
+      "assets/ui/human-avatars/avatars-08.png",
+      "assets/ui/human-avatars/avatars-09.png",
+      "assets/ui/human-avatars/avatars-10.png",
+      "assets/ui/human-avatars/avatars-11.png",
+      "assets/ui/human-avatars/avatars-12.png",
+      "assets/ui/human-avatars/avatars-13.png",
+      "assets/ui/human-avatars/avatars-14.png",
+      "assets/ui/human-avatars/avatars-15.png",
+      "assets/ui/human-avatars/avatars-16.png",
+      "assets/ui/human-avatars/avatars-17.png",
+      "assets/ui/human-avatars/avatars-18.png",
+      "assets/ui/human-avatars/avatars-19.png",
+      "assets/ui/human-avatars/avatars-20.png",
+      "assets/ui/human-avatars/avatars-21.png",
+      "assets/ui/human-avatars/avatars-22.png",
+      "assets/ui/human-avatars/avatars-23.png",
+      "assets/ui/human-avatars/avatars-24.png",
+      "assets/ui/human-avatars/avatars-25.png"
     ],
     "icons": [
-      "/assets/ui/icons/icon-01.png",
-      "/assets/ui/icons/icon-02.png",
-      "/assets/ui/icons/icon-03.png",
-      "/assets/ui/icons/icon-04.png",
-      "/assets/ui/icons/icon-05.png",
-      "/assets/ui/icons/icon-06.png",
-      "/assets/ui/icons/icon-07.png",
-      "/assets/ui/icons/icon-08.png",
-      "/assets/ui/icons/icon-09.png",
-      "/assets/ui/icons/icon-10.png",
-      "/assets/ui/icons/icon-11.png",
-      "/assets/ui/icons/icon-12.png"
+      "assets/ui/icons/icon-01.png",
+      "assets/ui/icons/icon-02.png",
+      "assets/ui/icons/icon-03.png",
+      "assets/ui/icons/icon-04.png",
+      "assets/ui/icons/icon-05.png",
+      "assets/ui/icons/icon-06.png",
+      "assets/ui/icons/icon-07.png",
+      "assets/ui/icons/icon-08.png",
+      "assets/ui/icons/icon-09.png",
+      "assets/ui/icons/icon-10.png",
+      "assets/ui/icons/icon-11.png",
+      "assets/ui/icons/icon-12.png"
     ],
     "papers": [
-      "/assets/ui/papers/regularpaper.png",
-      "/assets/ui/papers/specialpaper.png"
+      "assets/ui/papers/regularpaper.png",
+      "assets/ui/papers/specialpaper.png"
     ],
     "ribbons": [
-      "/assets/ui/ribbons/bigribbons.png",
-      "/assets/ui/ribbons/smallribbons.png"
+      "assets/ui/ribbons/bigribbons.png",
+      "assets/ui/ribbons/smallribbons.png"
     ],
     "store-banners": [],
     "swords": [
-      "/assets/ui/swords/swords.png"
+      "assets/ui/swords/swords.png"
     ],
     "wood-table": [
-      "/assets/ui/wood-table/woodtable-slots.png",
-      "/assets/ui/wood-table/woodtable.png"
+      "assets/ui/wood-table/woodtable-slots.png",
+      "assets/ui/wood-table/woodtable.png"
     ],
     "avatar": {
-      "file": "/assets/ui/human-avatars/avatars-01.png",
+      "file": "assets/ui/human-avatars/avatars-01.png",
       "bbox": {
         "left": 22,
         "top": 31,

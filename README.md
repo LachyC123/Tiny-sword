@@ -5,12 +5,26 @@ ES modules on a 2D canvas. No engine, no build step, no dependencies at
 runtime — the point is to prove out game *feel* on the real assets before
 committing to a stack.
 
-## Run it
+## Play it
+
+**Online:** https://lachyc123.github.io/Tiny-sword/ — deployed by
+`.github/workflows/pages.yml` on every push.
+
+> One-time setup: repo **Settings → Pages → Source: GitHub Actions**. That
+> switch can't be flipped from a workflow, so the first deploy won't publish
+> until it's set.
+
+**Locally:**
 
 ```bash
 python3 -m http.server 8123      # any static server, from the repo root
 # open http://localhost:8123
 ```
+
+Asset paths are resolved against the module's own URL, so the game runs
+unchanged from a domain root, a subdirectory, or a local server. The Pages
+workflow asserts this rather than trusting it — an absolute `/assets/...` path
+would 404 every sprite under `/<repo>/` and leave a blank canvas.
 
 **Controls** — WASD/arrows move, `J`/`Space` attack, `K`/`Shift` guard, `R`
 restart. On a touch device: drag anywhere on the left half for a floating
