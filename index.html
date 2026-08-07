@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#1b3a4b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Tiny Swords — Vertical Slice</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>%E2%9A%94%EF%B8%8F</text></svg>"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #12242e;
+        /* Kill mobile tap highlight / long-press menus / double-tap zoom. */
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        touch-action: none;
+        overscroll-behavior: none;
+      }
+      #game {
+        display: block;
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+        /* Pixel art must never be smoothed by the compositor either. */
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+      #boot {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        gap: 14px;
+        justify-items: center;
+        background: #12242e;
+        color: #cfe3c8;
+        font: 600 14px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        letter-spacing: 0.08em;
+        transition: opacity 0.35s ease;
+        z-index: 10;
+      }
+      #boot.gone {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #bootbar {
+        width: 190px;
+        height: 8px;
+        border: 2px solid #3d5a44;
+        border-radius: 999px;
+        overflow: hidden;
+        background: #1b3327;
+      }
+      #bootfill {
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, #7fb069, #b9d97a);
+        transition: width 0.15s ease;
+      }
+      /* Probe: lets JS read the display-cutout insets, which are only
+         available to CSS. Read via getComputedStyle on #safe-probe. */
+      #safe-probe {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        visibility: hidden;
+        padding: env(safe-area-inset-top) env(safe-area-inset-right)
+          env(safe-area-inset-bottom) env(safe-area-inset-left);
+      }
+      #boot .err {
+        color: #ff9d8a;
+        max-width: 78vw;
+        text-align: center;
+        letter-spacing: 0;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="safe-probe"></div>
+    <div id="boot">
+      <div>TINY SWORDS</div>
+      <div id="bootbar"><div id="bootfill"></div></div>
+      <div id="bootmsg">loading…</div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
