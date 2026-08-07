@@ -1,4 +1,12 @@
-/** Image + manifest loading with progress reporting. */
+/**
+ * Image + manifest loading with progress reporting.
+ *
+ * Manifest paths are repo-root-relative ("assets/units/…") and get resolved
+ * against a base URL at load time, so the game runs unchanged from a domain
+ * root, a subdirectory (GitHub Pages serves it at /<repo>/), or file://.
+ * The returned image map stays keyed by the *manifest* path so every lookup
+ * elsewhere can use the string the manifest gave it.
+ */
 
 const cache = new Map();
 
@@ -16,15 +24,15 @@ export function loadImage(src) {
 
 /**
  * Loads every image referenced by `srcs`, reporting progress as it goes.
- * Resolves to a plain `src -> HTMLImageElement` map.
+ * Resolves to a `manifestPath -> HTMLImageElement` map.
  */
-export async function preload(srcs, onProgress) {
+export async function preload(srcs, { base, onProgress } = {}) {
   const unique = [...new Set(srcs)];
   const out = {};
   let done = 0;
   await Promise.all(
     unique.map(async (src) => {
-      out[src] = await loadImage(src);
+      out[src] = await loadImage(new URL(src, base).href);
       done += 1;
       onProgress?.(done / unique.length, src);
     })
@@ -32,9 +40,14 @@ export async function preload(srcs, onProgress) {
   return out;
 }
 
-export async function loadManifest(url = '/assets/manifest.json') {
+export async function loadManifest(base) {
+  const url = new URL('assets/manifest.json', base).href;
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`manifest ${res.status} ${res.statusText} — is the dev server running from the repo root?`);
+  if (!res.ok) {
+    throw new Error(
+      `manifest ${res.status} at ${url} — run tools/build_manifest.py and serve from the repo root`
+    );
+  }
   return res.json();
 }
 

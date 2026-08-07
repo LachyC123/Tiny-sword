@@ -26,6 +26,10 @@ const bootMsg = document.getElementById('bootmsg');
 const PLAYER_PALETTE = 'blue';
 const ENEMY_PALETTE = 'red';
 
+// Repo root, derived from this module's own URL rather than the document's, so
+// asset resolution is unaffected by where the page is served from.
+const BASE = new URL('../', import.meta.url);
+
 boot().catch((err) => {
   console.error(err);
   bootMsg.className = 'err';
@@ -33,7 +37,7 @@ boot().catch((err) => {
 });
 
 async function boot() {
-  const manifest = await loadManifest();
+  const manifest = await loadManifest(BASE);
 
   // Collect exactly the images the slice needs.
   const srcs = [];
@@ -55,9 +59,12 @@ async function boot() {
   }
   srcs.push(manifest.ui.avatar.file);
 
-  const images = await preload(srcs.filter(Boolean), (p) => {
-    bootFill.style.width = `${Math.round(p * 100)}%`;
-    bootMsg.textContent = `loading ${Math.round(p * 100)}%`;
+  const images = await preload(srcs.filter(Boolean), {
+    base: BASE,
+    onProgress: (p) => {
+      bootFill.style.width = `${Math.round(p * 100)}%`;
+      bootMsg.textContent = `loading ${Math.round(p * 100)}%`;
+    },
   });
 
   bootMsg.textContent = 'ready';

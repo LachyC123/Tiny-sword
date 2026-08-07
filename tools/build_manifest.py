@@ -55,7 +55,12 @@ warnings: list[str] = []
 
 
 def rel(p: Path) -> str:
-    return "/" + str(p.relative_to(ROOT)).replace(os.sep, "/")
+    """
+    Repo-root-relative, with no leading slash — the runtime resolves these
+    against its own base URL. An absolute "/assets/..." would break anywhere the
+    game isn't served from the domain root, GitHub Pages included.
+    """
+    return str(p.relative_to(ROOT)).replace(os.sep, "/")
 
 
 def divisors(n: int) -> list[int]:

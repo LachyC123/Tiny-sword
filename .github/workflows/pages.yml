@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - claude/tiny-swords-asset-packs-a35jyw
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it, so Pages never ends up
+# serving a half-published site.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage the playable site
+        # Only what the browser needs — this keeps the source zip, tooling and
+        # docs out of the deployed artifact.
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -r src assets _site/
+          touch _site/.nojekyll
+
+      - name: Check assets resolve from a subdirectory
+        # Pages serves the game from /<repo>/, so an absolute "/assets/..." path
+        # would 404 for every sprite. Fail loudly here instead of shipping a
+        # blank canvas.
+        run: |
+          test -f _site/assets/manifest.json
+          if grep -q '"/assets/' _site/assets/manifest.json; then
+            echo "::error::manifest.json contains absolute paths — rerun tools/build_manifest.py"
+            exit 1
+          fi
+          if grep -rn 'href="/\|src="/' _site/index.html; then
+            echo "::error::index.html contains root-absolute URLs"
+            exit 1
+          fi
+          echo "asset paths are relative — ok"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
